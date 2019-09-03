@@ -1,4 +1,6 @@
-﻿namespace CalculadoraPintura
+﻿using System;
+
+namespace CalculadoraPintura
 {
     class Calculadora
     {
@@ -20,6 +22,12 @@
         public double CalcularLitragemNecessaria()
         {
 
+            if (areaParede == 0 && areaTeto == 0)
+            {
+                Console.WriteLine("Não é possível calcular a litragem com o valor informado");
+                Console.ReadLine();
+                Environment.Exit(1);
+            }
             return (areaParede + areaTeto) / 10;
         }
 
