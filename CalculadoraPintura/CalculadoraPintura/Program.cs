@@ -14,15 +14,18 @@ namespace CalculadoraPintura
 
             Console.WriteLine("A área das paredes é:");
             const double Altura = 2.9;
-            double areaParede = 2 * (largura + profundidade) * Altura;
-            Console.WriteLine(areaParede);
+
+            Calculadora calculadora = new Calculadora();
+
+            calculadora.areaParede = 2 * (largura + profundidade) * Altura;
+            Console.WriteLine(calculadora.areaParede);
 
             Console.WriteLine("A área do teto é:");
-            double areaTeto = largura * profundidade;
-            Console.WriteLine(areaTeto);
+            calculadora.areaTeto = largura * profundidade;
+            Console.WriteLine(calculadora.areaTeto);
 
             Console.WriteLine("A litragem de tinta necessária é :");
-            Console.WriteLine((areaParede + areaTeto) / 10);
+            Console.WriteLine((calculadora.areaParede + calculadora.areaTeto) / 10);
 
             Console.ReadKey();
         }
