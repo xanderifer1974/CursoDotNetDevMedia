@@ -17,8 +17,8 @@ namespace CalculadoraPintura
 
             Calculadora calculadora = new Calculadora();
 
-            calculadora.areaParede = 2 * (largura + profundidade) * Altura;
-            Console.WriteLine(calculadora.areaParede);
+            
+            Console.WriteLine(calculadora.CalcularAreaParede(largura,profundidade,Altura));
 
             Console.WriteLine("A área do teto é:");
             calculadora.areaTeto = largura * profundidade;
