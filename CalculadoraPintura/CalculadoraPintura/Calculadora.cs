@@ -2,8 +2,8 @@
 {
     class Calculadora
     {
-       public double areaParede;
-       public double areaTeto;
+       private double areaParede;
+       private double areaTeto;
 
         public double CalcularAreaParede(double largura, double profundidade, double altura)    
         {
