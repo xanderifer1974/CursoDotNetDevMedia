@@ -21,11 +21,10 @@ namespace CalculadoraPintura
             Console.WriteLine(calculadora.CalcularAreaParede(largura,profundidade,Altura));
 
             Console.WriteLine("A área do teto é:");
-            calculadora.areaTeto = largura * profundidade;
-            Console.WriteLine(calculadora.areaTeto);
+            Console.WriteLine(calculadora.CalcularAreaTeto(largura,profundidade));
 
             Console.WriteLine("A litragem de tinta necessária é :");
-            Console.WriteLine((calculadora.areaParede + calculadora.areaTeto) / 10);
+            Console.WriteLine(calculadora.CalcularLitragemNecessaria());
 
             Console.ReadKey();
         }
