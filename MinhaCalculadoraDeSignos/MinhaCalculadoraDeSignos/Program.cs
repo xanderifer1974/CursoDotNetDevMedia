@@ -10,6 +10,7 @@ namespace MinhaCalculadoraDeSignos
     {
         static void Main(string[] args)
         {
+            
         }
     }
 }
