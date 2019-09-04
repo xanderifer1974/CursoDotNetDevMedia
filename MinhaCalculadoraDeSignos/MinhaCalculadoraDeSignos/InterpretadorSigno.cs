@@ -116,11 +116,11 @@ namespace MinhaCalculadoraDeSignos
         public Signo Interpretar(int dia, int mes)
         {
             Signo signo = null;
-            if((dia >= 19 && mes == 2) || (dia <= 20 && mes == 3))
+            if((dia >= signos[1].diaInicio && mes == signos[1].mesInicio) || (dia <= signos[1].diaFim && mes == signos[1].mesFim))
             {
 
-                signo = new Signo();
-                signo.nome = "Peixes";
+                signo = signos[1];
+               
             }
             return signo;
         }
